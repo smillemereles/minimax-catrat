@@ -1,0 +1,19 @@
+Pasos para implementar el juego:
+
+Inicialización del Tablero y Posiciones Iniciales:
+Creamos un tablero cuadrado de tamaño GRID_SIZE x GRID_SIZE.
+Definimos las posiciones iniciales para el gato, el ratón y la salida.
+
+Lógica del Juego:
+El gato y el ratón se mueven por turnos.
+El ratón intenta alcanzar la salida mientras evita al gato.
+El gato intenta atrapar al ratón moviéndose hacia él.
+
+Interfaz Gráfica con tkinter:
+Usamos tkinter para dibujar el tablero y mostrar las imágenes del gato, el ratón y la salida.
+Cada celda en el tablero se representa visualmente como un rectángulo blanco.
+Se utilizan imágenes para representar al gato, ratón y salida en las posiciones correspondientes.
+
+Estrategias de Movimiento:
+El ratón utiliza un algoritmo de búsqueda simple para determinar su próximo movimiento hacia la salida.
+El gato utiliza un algoritmo minimax con poda alfa-beta para tomar decisiones sobre su movimiento, intentando minimizar la distancia al ratón.
